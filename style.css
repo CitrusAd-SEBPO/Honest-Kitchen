@@ -788,16 +788,18 @@ button {
     flex-direction: column-reverse;
     background-color: #e5f6f5;
   }
-  .citrusHonest_video {
-    max-width: 100%;
-  }
+
   .citrusHonest__embedRow .citrusHonest_video {
     max-width: 100%;
   }
 
   .citrusHonest__embedRow .citrusHonest_video iframe {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
+
   .citrusHonest_desktop_br {
     display: none;
   }
@@ -911,6 +913,12 @@ button {
   #citrusHonest__Nutrition {
     top: 100px;
   }
+
+  /* Dehydrated Food */
+  /* .citrusHonest_dehydrated_food_container {
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
 }
 
 @media screen and (min-width: 769px) and (max-width: 921px) {
