@@ -961,6 +961,84 @@ button {
   .citrusHonest_seeDetails {
     padding-top: 7px;
   }
+
+  /* Youtube Video Section */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Youtube Video Secyion */
+  .citrusHonest__embedRow {
+    width: 96%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .citrusHonest__embedRow .citrusHonest_video iframe {
+    max-width: 100%;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .citrusHonest_video_text h3,
+  .citrusHonest_huumanGrade_text h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .citrusHonest_video_text p {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+  }
+
+  .citrusHonest_desktop_br {
+    display: none;
+  }
+
+  .citrusHonest__embedRow .video_text_order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .citrusHonest__embedContainer {
+    height: auto;
+  }
+  .citrusHonest_video_text {
+    background-color: #e5f6f5;
+  }
+
+  /* Human Grade Section */
+  .citrusHonest_huumanGrade_text {
+    width: 90%;
+    background-color: #5fc5bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .citrusHonest_Lifestyle_img {
+    text-align: center;
+    width: 100%;
+  }
+
+  .citrusHonest_huumanGrade_text p {
+    margin-top: 10px;
+    margin-bottom: 22px;
+  }
+  .citrusHonest_tablet_br {
+    display: block;
+  }
+  .CitrusHonest_Lifestyle_text-block h4 {
+    margin-left: 0;
+  }
+  .citrusHonest_head_title_br_mob {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 922px) and (max-width: 1120px) {
