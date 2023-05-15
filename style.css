@@ -1089,7 +1089,7 @@ button {
     font-size: 14px;
     line-height: 16px;
     padding: 6px 0 6px 0;
-    /* max-width: 360px; */
+    max-width: 360px;
   }
   .citrusHonest_banner-copy p .citrusHonest_br_minimal {
     display: block;
@@ -1133,6 +1133,15 @@ button {
   }
 }
 
+@media all and (min-width: 1440px) {
+  /* POV Slider */
+  .citrusHonest_banner-copy p {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 12px 0 12px 0;
+    max-width: 540px;
+}
+}
 @media all and (min-width: 1441px) {
   /* Dehydrated Food Item */
   .citrusHonest_dehydrated_food_container {
