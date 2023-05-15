@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.citrusHonest__RawCategoryContainer::-webkit-scrollbar,
+.citrusHonest_dehydrated_food_container::-webkit-scrollbar,
 .citrusHonest__productCarousal-wrapper::-webkit-scrollbar {
   display: none;
 }
@@ -325,9 +325,9 @@ button {
     max-width: 235px;
   }
 
-  .splide__arrows {
-    display: none;
-  }
+  /* .splide__arrows {
+    display: block;
+  } */
 
   /* product section */
   .citrusHonestTabId {
@@ -343,6 +343,11 @@ button {
 @media all and (max-width: 575px) {
   .citrusHonest__Product {
     max-width: 195px;
+  }
+}
+@media all and (max-width: 425px) {
+  .splide__arrows {
+    display: none;
   }
 }
 
@@ -612,9 +617,10 @@ button {
 
 @media all and (max-width: 320px) {
   /* Human Grade Section */
-  .citrusHonest_huumanGrade_text p {
+  #citusHonest__humanDesc {
     width: 250px;
   }
+  
 }
 
 @media all and (max-width: 375px) {
@@ -1074,12 +1080,16 @@ button {
     line-height: 24px; */
   }
   .citrusHonest_banner-copy p {
-    font-size: 16px;
+    /* font-size: 16px;
     line-height: 18px;
-    padding: 6px 0 12px 0;
+    padding: 6px 0 12px 0; */
     /* font-size: 13.5px;
     line-height: 16px;
     padding: 5px 0 5px 0; */
+    font-size: 14px;
+    line-height: 16px;
+    padding: 6px 0 6px 0;
+    /* max-width: 360px; */
   }
   .citrusHonest_banner-copy p .citrusHonest_br_minimal {
     display: block;
@@ -1089,6 +1099,14 @@ button {
   }
   .citrusHonest_seeDetails {
     padding-top: 7px;
+  }
+
+  /* Dehydrated Food Item */
+  .citrusHonest_food_category {
+    column-gap: 0;
+}
+  .citrusHonest_food_details p {
+    width: 300px;
   }
 }
 
