@@ -442,6 +442,8 @@ button {
   text-decoration: underline;
   padding-top: 12px;
   font-size: 12px;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #000;
 }
 
 /* Dehydrated Food Item */
@@ -620,7 +622,6 @@ button {
   #citusHonest__humanDesc {
     width: 250px;
   }
-  
 }
 
 @media all and (max-width: 375px) {
@@ -1104,7 +1105,7 @@ button {
   /* Dehydrated Food Item */
   .citrusHonest_food_category {
     column-gap: 0;
-}
+  }
   .citrusHonest_food_details p {
     width: 300px;
   }
@@ -1140,7 +1141,7 @@ button {
     line-height: 20px;
     padding: 12px 0 12px 0;
     max-width: 540px;
-}
+  }
 }
 @media all and (min-width: 1441px) {
   /* Dehydrated Food Item */
@@ -1149,4 +1150,93 @@ button {
     max-width: 100%;
     margin: auto;
   }
+}
+
+/* Modal */
+.citrusHonest_modaloverlay {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 0.4s ease-in;
+  -moz-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
+  z-index: -1;
+  display: none;
+}
+
+.citrusHonest_modaloverlay.active {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.citrusHonest_modaloverlay .citrusHonest_modal {
+  background-color: #fff;
+  /* height: 50%; */
+  position: relative;
+  margin: 15% auto;
+  padding: 2em;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 7px;
+  width: 60%;
+}
+
+#citrusHonest_modalText {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+@media all and (max-width: 922px) {
+  .citrusHonest_modaloverlay .citrusHonest_modal {
+    width: 40%;
+  }
+}
+@media all and (min-width: 376px) and (max-width: 425px) {
+  .citrusHonest_modaloverlay .citrusHonest_modal {
+    width: 60%;
+  }
+}
+@media all and (max-width: 375px) {
+  .citrusHonest_modaloverlay .citrusHonest_modal {
+    width: 70%;
+  }
+}
+@media (min-width: 60em) {
+  .citrusHonest_modaloverlay .citrusHonest_modal {
+    /* height: 40%; */
+    margin: 15% auto;
+    max-height: 57em;
+    max-width: 66em;
+    width: 40%;
+  }
+}
+.citrusHonest_modaloverlay .citrusHonest_modal > div {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.citrusHonest_modaloverlay .citrus-close {
+  background-color: unset;
+  color: #001952;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  z-index: 1;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0 7px 0 0;
+  font-weight: 900;
 }

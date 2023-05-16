@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Shop The Honest Kitchen at Petco for human grade dog and cat food. Nutrition made with high-quality ingredients to support your pet's overall health.  " />
+      content="Shop The Honest Kitchen at Petco for human grade dog and cat food. Nutrition made with high-quality ingredients to support your pet's overall health.  "
+    />
     <title>The Honest Kitchen | Petco</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="splide.css" />
@@ -25,22 +26,26 @@
               <img
                 class="citrusHonest__logo_common"
                 src="img/citrusHonest__Log.png"
-                alt="The Honest Kitchen" />
+                alt="The Honest Kitchen"
+              />
 
               <!-- Carousel Image -->
               <img
                 class="citrusHonest__desktop-version"
                 src="img/Slider_1_DV.png"
-                alt="Water being poured into a dehydrated recipe made by The Honest Kitchen.Human grade. Quality and safety." />
+                alt="Water being poured into a dehydrated recipe made by The Honest Kitchen.Human grade. Quality and safety."
+              />
               <img
                 class="citrusHonest__mobile-version"
                 src="img/Slider_1_MV.png"
-                alt="Water being poured into a dehydrated recipe made by The Honest Kitchen." />
+                alt="Water being poured into a dehydrated recipe made by The Honest Kitchen."
+              />
               <!-- Badge -->
               <img
                 class="citrusHonest__bdg_first"
                 src="img/Human Grade Seal_NoDagger-01.png"
-                alt="Human grade. Quality and safety." />
+                alt="Human grade. Quality and safety."
+              />
             </div>
 
             <div class="citrusHonest_banner-copy" id="citrusHonest_taste_mob">
@@ -71,21 +76,25 @@
               <img
                 class="citrusHonest__logo_second"
                 src="img/citrusHonest__Log.png"
-                alt="The Honest Kitchen" />
+                alt="The Honest Kitchen"
+              />
               <!-- Carousel Image -->
               <img
                 class="citrusHonest__desktop-version tablet_n"
                 src="img/Slider_2_DV.png"
-                alt="A dog and cat laying on the kitchen floor with two boxes of The Honest Kitchen food in between them. Human grade. Quality and safety." />
+                alt="A dog and cat laying on the kitchen floor with two boxes of The Honest Kitchen food in between them. Human grade. Quality and safety."
+              />
               <img
                 class="citrusHonest__mobile-version citrusHonest__tablet-version"
                 src="img/Slider_1_MV.png"
-                alt="Water being poured into a dehydrated recipe made by The Honest Kitchen." />
+                alt="Water being poured into a dehydrated recipe made by The Honest Kitchen."
+              />
               <!-- Badge -->
               <img
                 class="citrusHonest__bdg_second"
                 src="img/Human Grade Seal_NoDagger-01.png"
-                alt="Human grade. Quality and safety." />
+                alt="Human grade. Quality and safety."
+              />
             </div>
             <div class="citrusHonest_banner-copy" id="citrusHonest__meal">
               <div>
@@ -121,21 +130,25 @@
                 class="citrusHonest__logo_common"
                 id="third_logo"
                 src="img/citrusHonest__Log.png"
-                alt="The Honest Kitchen" />
+                alt="The Honest Kitchen"
+              />
               <!-- Carousel Image -->
               <img
                 class="citrusHonest__desktop-version tablet_n"
                 src="img/Slider_3_DV.png"
-                alt="A woman in the kitchen pouring water into her pet’s bowl filled with The Honest Kitchen food in it.Human grade. Quality and safety." />
+                alt="A woman in the kitchen pouring water into her pet’s bowl filled with The Honest Kitchen food in it.Human grade. Quality and safety."
+              />
               <img
                 class="citrusHonest__mobile-version citrusHonest__tablet-version"
                 src="img/Slider_3_MV.png"
-                alt="Water being poured into a dehydrated recipe made by The Honest Kitchen." />
+                alt="Water being poured into a dehydrated recipe made by The Honest Kitchen."
+              />
               <!-- Badge -->
               <img
                 class="citrusHonest__bdg_third"
                 src="img/Human Grade Seal_NoDagger-01.png"
-                alt="Human grade. Quality and safety." />
+                alt="Human grade. Quality and safety."
+              />
             </div>
             <div class="citrusHonest_banner-copy" id="citrusHonest__Nutrition">
               <div>
@@ -151,7 +164,8 @@
                   onclick="clickTrackLink(this); "
                   ><button>shop now</button></a
                 >
-                <a href="" class="citrusHonest_seeDetails">See Details</a>
+                <!-- Trigger/Open The Modal -->
+                <a href="#" class="citrusHonest_seeDetails">See Details</a>
               </div>
             </div>
           </div>
@@ -164,6 +178,47 @@
         <div class="citrusHonest_carousel-indicators"></div>
       </section>
       <!-- End POV slider -->
+
+      <!-- The Modal -->
+      <div id="citrusHonest_modal" class="citrusHonest_modaloverlay">
+        <div class="citrusHonest_modal">
+          <button id="citrusHonest_modal-close" class="citrus-close">
+            &times;
+          </button>
+          <div>
+            <p id="citrusHonest_modalText">
+              An in-home comprehensive AAFCO feeding trial included 24 active
+              adult dogs eating Dehydrated Grain-Free Chicken Recipe for dogs,
+              Dehydrated Whole Grain Chicken Recipe for dogs and Whole Food
+              Clusters Grain-Free Chicken Recipe for dogs. For a full list of
+              recipes that are nutritionally comparable to the recipes above,
+              and are considered substantiated by the results, please visit
+              bit.ly/THKAAFCOTrials.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Js -->
+      <script type="text/javascript">
+        let citrusYtVideos = document.querySelectorAll(
+          ".citrusHonest_seeDetails"
+        );
+        let citrusModal = document.querySelector("#citrusHonest_modal");
+        let citrusModalClose = document.querySelector(
+          "#citrusHonest_modal-close"
+        );
+
+        citrusModalClose.addEventListener("click", function (event) {
+          citrusModal.classList.toggle("active");
+        });
+
+        citrusYtVideos.forEach((item) => {
+          item.addEventListener("click", function (event) {
+            citrusModal.classList.toggle("active");
+            event.preventDefault();
+          });
+        });
+      </script>
 
       <!-- Dehydrated food -->
       <section class="citrusHonest_Dehydrated_Food">
@@ -179,14 +234,16 @@
           <a
             href="https://www.petco.com/shop/en/petcostore/brand/the  honest  kitchen"
             manual_cm_sp="sponsoredbrandpage:thehonestkitchen:thebenefitsofdehydratedfood:1:thebenefitsofdehydratedfood:shopnow"
-            onclick="clickTrackLink(this);">
+            onclick="clickTrackLink(this);"
+          >
             <div class="citrusHonest_food_category">
               <!-- Cart Item O1 -->
               <div class="citrusHonest_dehydrated_food_cart">
                 <div class="citrusHonest_food_container_img">
                   <img
                     src="img/Citrus_Honest_Minimally_processed.png"
-                    alt="A basket with carrots, broccoli and a pumpkin in it" />
+                    alt="A basket with carrots, broccoli and a pumpkin in it"
+                  />
                 </div>
                 <div class="citrusHonest_food_details">
                   <h3>Minimally processed</h3>
@@ -200,11 +257,13 @@
               <!-- Cart Item 02 -->
               <div
                 class="citrusHonest_dehydrated_food_cart"
-                id="citrusHonest__lifeLong">
+                id="citrusHonest__lifeLong"
+              >
                 <div class="citrusHonest_food_container_img">
                   <img
                     src="img/Citrus_Honest A 7 lb. box.png"
-                    alt="A water droplet with the number four and the multiplication symbol in the middle" />
+                    alt="A water droplet with the number four and the multiplication symbol in the middle"
+                  />
                 </div>
                 <div class="citrusHonest_food_details">
                   <h3>A 7 lb. box makes 28 lb. of food</h3>
@@ -220,7 +279,8 @@
                 <div class="citrusHonest_food_container_img">
                   <img
                     src="img/Citrus_Honest Fresh .png"
-                    alt="Dollar sign icon" />
+                    alt="Dollar sign icon"
+                  />
                 </div>
                 <div class="citrusHonest_food_details">
                   <h3>Fresh without the fuss</h3>
@@ -236,13 +296,15 @@
                 <div class="citrusHonest_food_container_img">
                   <img
                     src="img/Citrus_Honbest ingredients .png"
-                    alt="Human grade. Quality and safety." />
+                    alt="Human grade. Quality and safety."
+                  />
                 </div>
                 <div class="citrusHonest_food_details">
                   <h3>High-quality ingredients</h3>
                   <p
                     id="citrusHonest_food_details_last_item"
-                    class="citrusX__TT__Regular">
+                    class="citrusX__TT__Regular"
+                  >
                     Recipes never contain GMO ingredients, feed-grade
                     ingredients, meat meals, by-products, fillers, corn, wheat
                     or soy.
@@ -274,13 +336,15 @@
               <div id="citrusHonestTabId" class="citrusHonestTabId">
                 <button
                   class="citrusHonest__tab_item citrusHonest__active_tab"
-                  onclick="filterProducts('citrusHonest-Dog-Product')">
+                  onclick="filterProducts('citrusHonest-Dog-Product')"
+                >
                   <img src="img/Citrus_Honest_Icon_Dog.png" alt="Dog icon" />
                   <p>DOG</p>
                 </button>
                 <button
                   class="citrusHonest__tab_item"
-                  onclick="filterProducts('citrusHonest-Cat-Product')">
+                  onclick="filterProducts('citrusHonest-Cat-Product')"
+                >
                   <img src="img/Citrus_Honest_Icon_Cat.png" alt="Cat icon" />
                   <p>CAT</p>
                 </button>
@@ -292,17 +356,20 @@
               <!-- Dog FOOD product -->
               <div
                 id="citrusHonest-Dog-Product"
-                class="splide citrusHonest__Products">
+                class="splide citrusHonest__Products"
+              >
                 <div class="splide__track">
                   <div class="splide__list">
                     <!-- tab item 01-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-whole-grain-chicken-recipe-dry-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:1:thehonestkitchendehydratedwholegrainchickenrecipedogfood7lbs:shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/P1.png" alt="" />
                           </div>
@@ -321,12 +388,14 @@
                     <!-- tab item -->
                     <!-- tab item 02-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-chicken-recipe-dry-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:2:thehonestkitchendehydratedgrainfreechickenrecipedogfood7lbs :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestDF_2.png" alt="" />
                           </div>
@@ -345,12 +414,14 @@
                     <!-- tab item -->
                     <!-- tab item 03-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-whole-grain-beef-recipe-dry-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:3:thehonestkitchendehydratedwholegrainbeefrecipedogfood7lbs:shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestDF_3.png" alt="" />
                           </div>
@@ -369,12 +440,14 @@
                     <!-- tab item -->
                     <!-- tab item 04-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-beef-recipe-dry-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:4:thehonestkitchendehydratedgrainfreebeefrecipedogfood7lbs:shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestDF_4.png" alt="" />
                           </div>
@@ -393,12 +466,14 @@
                     <!-- tab item -->
                     <!-- tab item 05-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-whole-grain-turkey-recipe-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:5:thehonestkitchendehydratedwholegrainturkeyrecipedogfood7lbs:shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestDF_5.png" alt="" />
                           </div>
@@ -417,12 +492,14 @@
                     <!-- tab item -->
                     <!-- tab item 06-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-turkey-recipe-dry-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:6:thehonestkitchendehydratedgrainfreeturkeyrecipedogfood7lbs:shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestDF_6.png" alt="" />
                           </div>
@@ -441,12 +518,14 @@
                     <!-- tab item -->
                     <!-- tab item 07-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-whole-grain-chicken-recipe-dry-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:7:thehonestkitchendehydratedwholegrainchickenrecipedogfood2lbs:shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestDF_7.png" alt="" />
                           </div>
@@ -465,12 +544,14 @@
                     <!-- tab item -->
                     <!-- tab item 08-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-chicken-recipe-dry-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:8:thehonestkitchendehydratedgrainfreechickenrecipedogfood2lbs:shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestDF_8.png" alt="" />
                           </div>
@@ -489,12 +570,14 @@
                     <!-- tab item -->
                     <!-- tab item 09-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-whole-grain-beef-recipe-dry-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:9:thehonestkitchendehydratedwholegrainbeefrecipedogfood2lbs:shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestDF_9.png" alt="" />
                           </div>
@@ -513,12 +596,14 @@
                     <!-- tab item -->
                     <!-- tab item 10-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Dog-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-whole-grain-beef-recipe-dry-dog-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:10:thehonestkitchendehydratedwholegrainturkeyrecipedogfood2lbs:shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestDF_10.png" alt="" />
                           </div>
@@ -543,17 +628,20 @@
               <!-- CAT FOOD product -->
               <div
                 id="citrusHonest-Cat-Product"
-                class="splide citrusHonest__Products">
+                class="splide citrusHonest__Products"
+              >
                 <div class="splide__track">
                   <div class="splide__list">
                     <!-- tab item 01-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-chicken-and-fish-cat-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:1:thehonestkitchendehydratedgrainfreechickenfishcatfood4lbs :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_1.png" alt="" />
                           </div>
@@ -572,12 +660,14 @@
                     <!-- tab item -->
                     <!-- tab item 02-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-chicken-cat-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:2:thehonestkitchendehydratedgrainfreechickencatfood4lbs :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_2.png" alt="" />
                           </div>
@@ -596,12 +686,14 @@
                     <!-- tab item -->
                     <!-- tab item 03-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-turkey-cat-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:3:thehonestkitchendehydratedgrainfreeturkeycatfood4lbs :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_3.png" alt="" />
                           </div>
@@ -620,12 +712,14 @@
                     <!-- tab item -->
                     <!-- tab item 04-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-chicken-and-fish-cat-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:4:thehonestkitchendehydratedgrainfreechickenfishcatfood2lbs :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_4.png" alt="" />
                           </div>
@@ -644,12 +738,14 @@
                     <!-- tab item -->
                     <!-- tab item 05-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-chicken-cat-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:5:thehonestkitchendehydratedgrainfreechickencatfood2lbs :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_5.png" alt="" />
                           </div>
@@ -668,12 +764,14 @@
                     <!-- tab item -->
                     <!-- tab item 06-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-turkey-cat-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:6:thehonestkitchendehydratedgrainfreeturkeycatfood2lbs :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_6.png" alt="" />
                           </div>
@@ -692,12 +790,14 @@
                     <!-- tab item -->
                     <!-- tab item 07-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-cat-food-variety-pack"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:7:thehonestkitchendehydratedgrainfreecatfoodvarietypack1ozcountof10 :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_7.png" alt="" />
                           </div>
@@ -716,12 +816,14 @@
                     <!-- tab item -->
                     <!-- tab item 08-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-chicken-and-fish-cat-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:8:thehonestkitchendehydratedgrainfreechickenfishcatfood1oz :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_8.png" alt="" />
                           </div>
@@ -740,12 +842,14 @@
                     <!-- tab item -->
                     <!-- tab item 09-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-chicken-cat-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:9:thehonestkitchendehydratedgrainfreechickencatfood1oz :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_9.png" alt="" />
                           </div>
@@ -764,12 +868,14 @@
                     <!-- tab item -->
                     <!-- tab item 10-->
                     <div
-                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide">
+                      class="citrusHonest__Product citrusHonest-Cat-Product splide__slide"
+                    >
                       <div class="citrusHonest-tab-card">
                         <a
                           href="https://www.petco.com/shop/en/petcostore/product/the-honest-kitchen-dehydrated-grain-free-turkey-cat-food"
                           manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:10:thehonestkitchendehydratedgrainfreeturkeycatfood1oz :shopnow"
-                          onclick="clickTrackLink(this);">
+                          onclick="clickTrackLink(this);"
+                        >
                           <div class="citrusHonest-tab-cardImg">
                             <img src="img/CitrusHonestCF_10.png" alt="" />
                           </div>
@@ -818,7 +924,8 @@
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="citrusHonest_video_text video_text_order">
               <h3>
@@ -875,7 +982,8 @@
               <div class="citrusHonest_Lifestyle_container">
                 <img
                   src="img/CitrusHonest_Lifestyle_img.png"
-                  alt="Founder and Chief Integrity Officer, Lucy Postins, sitting on a couch with two large dogs" />
+                  alt="Founder and Chief Integrity Officer, Lucy Postins, sitting on a couch with two large dogs"
+                />
                 <div class="CitrusHonest_Lifestyle_text-block">
                   <h4>
                     Founded in 2002 by Lucy Postins, Chief Integrity Officer
