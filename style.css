@@ -530,8 +530,12 @@ button {
   width: 560;
 }
 .citrusHonest_video_text,
-.citrusHonest_huumanGrade_text {
+.citrusHonest_video_text, .citrusHonest_huumanGrade_text {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 .citrusHonest_desktop_br {
   display: block;
@@ -572,10 +576,11 @@ button {
 }
 
 .citrusHonest__humanGrade_row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
   align-items: center;
   margin-bottom: 40px;
+  justify-content: space-between;
 }
 
 .citrusHonest_Lifestyle_img {
@@ -983,7 +988,7 @@ button {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* Youtube Video Secyion */
   .citrusHonest__embedRow {
-    width: 96%;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
