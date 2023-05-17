@@ -195,27 +195,6 @@
           </div>
         </div>
       </div>
-      <!-- Modal Js -->
-      <script type="text/javascript">
-        let citrusYtVideos = document.querySelectorAll(
-          ".citrusHonest_seeDetails"
-        );
-        let citrusModal = document.querySelector("#citrusHonest_modal");
-        let citrusModalClose = document.querySelector(
-          "#citrusHonest_modal-close"
-        );
-
-        citrusModalClose.addEventListener("click", function (event) {
-          citrusModal.classList.toggle("active");
-        });
-
-        citrusYtVideos.forEach((item) => {
-          item.addEventListener("click", function (event) {
-            citrusModal.classList.toggle("active");
-            event.preventDefault();
-          });
-        });
-      </script>
 
       <!-- Dehydrated food -->
       <section class="citrusHonest_Dehydrated_Food">
@@ -994,7 +973,30 @@
       <!-- End Human Grade Section -->
     </main>
     <!-- End landing page wrapper -->
+
     <!-- js dependency -->
+    <!-- Start Modal Js -->
+    <script type="text/javascript">
+      let citrusYtVideos = document.querySelectorAll(
+        ".citrusHonest_seeDetails"
+      );
+      let citrusModal = document.querySelector("#citrusHonest_modal");
+      let citrusModalClose = document.querySelector(
+        "#citrusHonest_modal-close"
+      );
+
+      citrusModalClose.addEventListener("click", function (event) {
+        citrusModal.classList.toggle("active");
+      });
+
+      citrusYtVideos.forEach((item) => {
+        item.addEventListener("click", function (event) {
+          citrusModal.classList.toggle("active");
+          event.preventDefault();
+        });
+      });
+    </script>
+    <!-- End Modal Js -->
     <!-- splide js library-->
     <script src="splide.js"></script>
     <!-- custom javascript -->

@@ -1,31 +1,4 @@
 <style>
-  /* Font Embedded */
-  /*
-       * Legal Disclaimer
-       *
-       * These web fonts are licensed exclusively for use on the following:
-       * All domains belonging to Petco
-       *
-       * It is strictly forbidden to download or use these fonts on any other website domain or media.
-       *
-       * While the @font-face statements below may be modified by the client, this
-       * disclaimer may not be removed.
-       *
-       * Lineto.com, 2020
-       */
-
-  @font-face {
-    font-family: PetcoCircularTT-Regular;
-    src: url(fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
-      url(fonts/PetcoCircularTT-Regular.woff) format("woff");
-  }
-  @font-face {
-    font-family: PetcoCircularTT-Bold;
-    src: url(fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
-      url(fonts/PetcoCircularTT-Bold.woff) format("woff");
-  }
-  /* End Font Embedded */
-
   /* Start Default Splide CSS */
   /* default splide js library style */
   .splide__container {
@@ -1631,7 +1604,6 @@
   .citrusHonest_modaloverlay .citrusHonest_modal > div {
     border: none;
     width: 100%;
-    height: 100%;
   }
 
   .citrusHonest_modaloverlay .citrus-close {
@@ -1830,23 +1802,6 @@
       </div>
     </div>
   </div>
-  <!-- Modal Js -->
-  <script type="text/javascript">
-    let citrusYtVideos = document.querySelectorAll(".citrusHonest_seeDetails");
-    let citrusModal = document.querySelector("#citrusHonest_modal");
-    let citrusModalClose = document.querySelector("#citrusHonest_modal-close");
-
-    citrusModalClose.addEventListener("click", function (event) {
-      citrusModal.classList.toggle("active");
-    });
-
-    citrusYtVideos.forEach((item) => {
-      item.addEventListener("click", function (event) {
-        citrusModal.classList.toggle("active");
-        event.preventDefault();
-      });
-    });
-  </script>
 
   <!-- Dehydrated food -->
   <section class="citrusHonest_Dehydrated_Food">
@@ -1905,7 +1860,10 @@
           <!-- Cart Item 03 -->
           <div class="citrusHonest_dehydrated_food_cart">
             <div class="citrusHonest_food_container_img">
-              <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Citrus_Honest Fresh " alt="Dollar sign icon" />
+              <img
+                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Citrus_Honest Fresh "
+                alt="Dollar sign icon"
+              />
             </div>
             <div class="citrusHonest_food_details">
               <h3>Fresh without the fuss</h3>
@@ -1962,14 +1920,20 @@
               class="citrusHonest__tab_item citrusHonest__active_tab"
               onclick="filterProducts('citrusHonest-Dog-Product')"
             >
-              <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Citrus_Honest_Icon_Dog" alt="Dog icon" />
+              <img
+                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Citrus_Honest_Icon_Dog"
+                alt="Dog icon"
+              />
               <p>DOG</p>
             </button>
             <button
               class="citrusHonest__tab_item"
               onclick="filterProducts('citrusHonest-Cat-Product')"
             >
-              <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Citrus_Honest_Icon_Cat" alt="Cat icon" />
+              <img
+                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Citrus_Honest_Icon_Cat"
+                alt="Cat icon"
+              />
               <p>CAT</p>
             </button>
           </div>
@@ -1995,7 +1959,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_1" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_1"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2021,7 +1988,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_2" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_2"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2047,7 +2017,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_3" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_3"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2073,7 +2046,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_4" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_4"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2099,7 +2075,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_5" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_5"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2125,7 +2104,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_6" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_6"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2151,7 +2133,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_7" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_7"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2177,7 +2162,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_8" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_8"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2203,7 +2191,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_9" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_9"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2229,7 +2220,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_10" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestDF_10"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2267,7 +2261,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_1" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_1"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2293,7 +2290,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_2" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_2"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2319,7 +2319,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_3" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_3"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2345,7 +2348,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_4" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_4"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2371,7 +2377,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_5" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_5"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2397,7 +2406,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_6" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_6"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2423,7 +2435,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_7" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_7"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2449,7 +2464,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_8" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_8"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2475,7 +2493,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_9" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_9"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2501,7 +2522,10 @@
                       onclick="clickTrackLink(this);"
                     >
                       <div class="citrusHonest-tab-cardImg">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_10" alt="" />
+                        <img
+                          src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/CitrusHonestCF_10"
+                          alt=""
+                        />
                       </div>
                       <div class="citrusHonest-tab-cardBody">
                         <p class="citrusX__TT__Regular">
@@ -2619,6 +2643,25 @@
   <!-- End Human Grade Section -->
 </main>
 <!-- End landing page wrapper -->
+
+<!-- Start Modal Js -->
+<script type="text/javascript">
+  let citrusYtVideos = document.querySelectorAll(".citrusHonest_seeDetails");
+  let citrusModal = document.querySelector("#citrusHonest_modal");
+  let citrusModalClose = document.querySelector("#citrusHonest_modal-close");
+
+  citrusModalClose.addEventListener("click", function (event) {
+    citrusModal.classList.toggle("active");
+  });
+
+  citrusYtVideos.forEach((item) => {
+    item.addEventListener("click", function (event) {
+      citrusModal.classList.toggle("active");
+      event.preventDefault();
+    });
+  });
+</script>
+<!-- End Modal Js -->
 
 <!-- js dependency -->
 <!-- Start Splide js library-->
