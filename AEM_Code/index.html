@@ -1,5 +1,4 @@
 <style>
-  /* Start Default Splide CSS */
   /* default splide js library style */
   .splide__container {
     box-sizing: border-box;
@@ -380,21 +379,27 @@
     margin: 0;
     padding: 0;
   }
+
   .citrusHonest_dehydrated_food_container::-webkit-scrollbar,
   .citrusHonest__productCarousal-wrapper::-webkit-scrollbar {
     display: none;
   }
 
-  a {
-    text-decoration: none;
-    color: #000;
+  .citrusHonest__wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
   }
 
-  a:hover {
+  .citrusHonest__wrapper a {
     text-decoration: none;
   }
 
-  h1,
+  .citrusHonest__wrapper a:hover {
+    text-decoration: none;
+  }
+
+  .citrusHonest__wrapper h1,
   h2,
   h3,
   h4 {
@@ -404,7 +409,7 @@
     font-family: "PetcoCircularTT-Bold", arial !important;
   }
 
-  p {
+  .citrusHonest__wrapper p {
     margin: 0;
     padding: 0;
     line-height: auto;
@@ -412,32 +417,32 @@
     color: #000;
   }
 
-  .citrusHonest__wrapper {
-    width: 100%;
-    max-width: 1440px;
-    margin: auto;
-  }
-
   .citrusHonest__wrapper img {
     max-width: 100%;
   }
 
-  .citrusHonest_banner-copy button,
-  .citrusHonest_Dehydrated_Food button,
-  .citrusHonest__tab-area_btn button,
-  .citrusHonest_video_text button,
-  .citrusHonest_huumanGrade_text button {
-    font-family: "PetcoCircularTT-Bold", arial !important;
-    font-size: 16px;
+  .citrusHonest__btn_alternative {
     color: #fff;
     text-transform: uppercase;
     background-color: #001952;
     border: none;
     border-radius: 5px;
-    padding: 22px 60px 18px;
-    cursor: pointer;
     font-weight: bold;
     width: 211px;
+    height: 56px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    font-weight: 900;
+  }
+
+  .citrusHonest_Dehydrated_Food .citrusHonest__btn_alternative,
+  .citrusHonest__tab-area_btn .citrusHonest__btn_alternative,
+  .citruHonest__embedVideo .citrusHonest__btn_alternative,
+  .citrusHonest__humanGrade_section .citrusHonest__btn_alternative {
     margin: 0 auto;
   }
 
@@ -458,7 +463,6 @@
     scrollbar-width: none;
     /* Firefox */
   }
-
   /* End Universal */
 
   /** ---- Default Style ---- **/
@@ -705,8 +709,8 @@
     }
 
     /* .splide__arrows {
-          display: block;
-        } */
+    display: block;
+  } */
 
     /* product section */
     .citrusHonestTabId {
@@ -736,7 +740,6 @@
 
   /** ---- Custom CSS ---- **/
   /* POV Slider */
-  /* Slider Style */
   .citrusHonest_carousel-image {
     position: relative;
   }
@@ -818,7 +821,7 @@
 
   .citrusHonest_seeDetails {
     display: block;
-    text-decoration: underline;
+    text-decoration: underline !important;
     padding-top: 12px;
     font-size: 12px;
     font-family: "PetcoCircularTT-Bold", arial !important;
@@ -943,7 +946,6 @@
   }
 
   /* Human Grade Section */
-
   .citrusHonest_huumanGrade_text p {
     font-size: 16px;
     line-height: 22px;
@@ -957,7 +959,6 @@
 
   .citrusHonest__humanGrade_row {
     display: flex;
-    /* grid-template-columns: repeat(2, 1fr); */
     align-items: center;
     margin-bottom: 40px;
     justify-content: space-between;
@@ -1164,19 +1165,18 @@
       height: 100%;
     }
 
-    .citrusHonest_banner-copy button,
-    .citrusHonest_Dehydrated_Food button,
-    .citrusHonest__tab-area_btn button,
-    .citrusHonest_video_text button,
-    .citrusHonest_huumanGrade_text button {
+    .citrusHonest__btn_alternative {
       font-size: 16px;
       color: #001952;
       text-transform: capitalize;
       background: none;
       padding: 0;
-      text-decoration: underline;
+      text-decoration: underline !important;
       font-family: "PetcoCircularTT-Bold", arial !important;
       font-weight: 900;
+      margin: 0 auto;
+      width: fit-content;
+      height: fit-content;
     }
     .citrusHonest__embedRow {
       flex-direction: column-reverse;
@@ -1307,12 +1307,6 @@
     #citrusHonest__Nutrition {
       top: 100px;
     }
-
-    /* Dehydrated Food */
-    /* .citrusHonest_dehydrated_food_container {
-          padding-left: 20px;
-          padding-right: 20px;
-        } */
   }
 
   @media screen and (min-width: 769px) and (max-width: 921px) {
@@ -1346,25 +1340,21 @@
     .citrusHonest_banner-copy .CitrusHonest_homemadeMeals_pg {
       width: 210px !important;
     }
-    .citrusHonest_banner-copy button {
-      border-radius: 3px !important;
-      padding: 0;
-    }
-    .citrusHonest_banner-copy button {
+    .citrusHonest_banner-copy .citrusHonest__btn_alternative {
       font-size: 16px;
       color: #001952;
       text-transform: capitalize;
       background: none;
       padding: 0;
       text-decoration: underline;
-      font-family: "PetcoCircularTT-Bold", arial !important;
       font-weight: 900;
+      width: fit-content;
+      height: fit-content;
     }
+
     .citrusHonest_seeDetails {
       padding-top: 7px;
     }
-
-    /* Youtube Video Section */
   }
 
   @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1375,6 +1365,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
+
     .citrusHonest__embedRow .citrusHonest_video iframe {
       max-width: 100%;
       height: 270px;
@@ -1406,9 +1397,11 @@
       align-items: center;
       width: 100%;
     }
+
     .citrusHonest__embedContainer {
       height: auto;
     }
+
     .citrusHonest_video_text {
       background-color: #e5f6f5;
     }
@@ -1423,6 +1416,7 @@
       align-items: center;
       margin: auto;
     }
+
     .citrusHonest_Lifestyle_img {
       text-align: center;
       width: 100%;
@@ -1431,15 +1425,28 @@
     .citrusHonest_huumanGrade_text p {
       margin-top: 10px;
       margin-bottom: 22px;
+      padding: 0 20px;
     }
+
     .citrusHonest_tablet_br {
       display: block;
     }
+
     .CitrusHonest_Lifestyle_text-block h4 {
       margin-left: 0;
     }
+
     .citrusHonest_head_title_br_mob {
       display: block;
+    }
+
+    /* Common Button */
+    .citrusHonest_Dehydrated_Food .citrusHonest__btn_alternative,
+    .citrusHonest__tab-area_btn .citrusHonest__btn_alternative,
+    .citruHonest__embedVideo .citrusHonest__btn_alternative,
+    .citrusHonest__humanGrade_section .citrusHonest__btn_alternative {
+      width: 150px;
+      height: 40px;
     }
   }
 
@@ -1450,11 +1457,13 @@
     .citrusHonest_carousel-item {
       height: auto;
     }
+
     .citrusHonest__logo_common {
       right: 2% !important;
       height: 71px;
       width: 100px !important;
     }
+
     .citrusHonest__logo_second {
       right: 10% !important;
       height: 42%;
@@ -1464,27 +1473,24 @@
     .citrusHonest_banner-copy h1 {
       font-size: 24px;
       line-height: 26px;
-      /* font-size: 22px;
-          line-height: 24px; */
     }
+
     .citrusHonest_banner-copy p {
-      /* font-size: 16px;
-          line-height: 18px;
-          padding: 6px 0 12px 0; */
-      /* font-size: 13.5px;
-          line-height: 16px;
-          padding: 5px 0 5px 0; */
       font-size: 14px;
       line-height: 16px;
       padding: 6px 0 6px 0;
       max-width: 360px;
     }
+
     .citrusHonest_banner-copy p .citrusHonest_br_minimal {
       display: block;
     }
-    .citrusHonest_banner-copy button {
-      padding: 12px 32px 10px;
+
+    .citrusHonest__btn_alternative {
+      width: 170px;
+      height: 40px;
     }
+
     .citrusHonest_seeDetails {
       padding-top: 7px;
     }
@@ -1493,6 +1499,7 @@
     .citrusHonest_food_category {
       column-gap: 0;
     }
+
     .citrusHonest_food_details p {
       width: 300px;
     }
@@ -1515,9 +1522,6 @@
       font-size: 15px;
       line-height: 17px;
       padding: 8px 0 8px 0;
-    }
-    .citrusHonest_banner-copy button {
-      padding: 12px 32px 10px;
     }
   }
 
@@ -1586,16 +1590,19 @@
       width: 40%;
     }
   }
+
   @media all and (min-width: 376px) and (max-width: 425px) {
     .citrusHonest_modaloverlay .citrusHonest_modal {
       width: 60%;
     }
   }
+
   @media all and (max-width: 375px) {
     .citrusHonest_modaloverlay .citrusHonest_modal {
       width: 70%;
     }
   }
+
   @media (min-width: 60em) {
     .citrusHonest_modaloverlay .citrusHonest_modal {
       /* height: 40%; */
@@ -1605,6 +1612,7 @@
       width: 40%;
     }
   }
+
   .citrusHonest_modaloverlay .citrusHonest_modal > div {
     border: none;
     width: 100%;
@@ -1627,6 +1635,7 @@
     font-weight: 900;
   }
 </style>
+
 <!-- Start landing page wrapper -->
 <main class="citrusHonest__wrapper">
   <!-- POV slider -->
@@ -1673,9 +1682,10 @@
             </p>
             <a
               href="https://www.petco.com/shop/en/petcostore/brand/the  honest  kitchen"
+              class="citrusHonest__btn_alternative"
               manual_cm_sp="sponsoredbrandpage:thehonestkitchen:heropov:1:looksdifferenttastesdelicious:shopnow"
               onclick="clickTrackLink(this); "
-              ><button>shop now</button></a
+              >shop now</a
             >
           </div>
         </div>
@@ -1723,9 +1733,10 @@
             </p>
             <a
               href="https://www.petco.com/shop/en/petcostore/brand/the  honest  kitchen"
+              class="citrusHonest__btn_alternative"
               manual_cm_sp="sponsoredbrandpage:thehonestkitchen:heropov:2:homemademealsthatareeasytoprepare:shopnow"
               onclick="clickTrackLink(this); "
-              ><button>shop now</button></a
+              >shop now</a
             >
           </div>
         </div>
@@ -1769,12 +1780,19 @@
             </p>
             <a
               href="https://www.petco.com/shop/en/petcostore/brand/the  honest  kitchen"
+              class="citrusHonest__btn_alternative"
               manual_cm_sp="sponsoredbrandpage:thehonestkitchen:heropov:3:nutritionbackedbyscience:shopnow"
               onclick="clickTrackLink(this); "
-              ><button>shop now</button></a
+              >shop now</a
             >
             <!-- Trigger/Open The Modal -->
-            <a href="#" class="citrusHonest_seeDetails">See Details</a>
+            <a
+              href="#"
+              class="citrusHonest_seeDetails"
+              id="
+              citrusHonest__trigger"
+              >See Details</a
+            >
           </div>
         </div>
       </div>
@@ -1902,9 +1920,10 @@
     </div>
     <a
       href="https://www.petco.com/shop/en/petcostore/brand/the  honest  kitchen"
+      class="citrusHonest__btn_alternative"
       manual_cm_sp="sponsoredbrandpage:thehonestkitchen:thebenefitsofdehydratedfood:1:thebenefitsofdehydratedfood:shopnow"
       onclick="clickTrackLink(this); "
-      ><button>shop now</button></a
+      >shop now</a
     >
   </section>
   <!-- End Dehydrated food -->
@@ -2556,9 +2575,10 @@
     <div class="citrusHonest__tab-area_btn">
       <a
         href="https://www.petco.com/shop/en/petcostore/brand/the  honest  kitchen"
+        class="citrusHonest__btn_alternative"
         manual_cm_sp="sponsoredbrandpage:thehonestkitchen:explorethehonestkitchendehydratedreceipes:1:shopall:shopall"
         onclick="clickTrackLink(this); "
-        ><button>shop all</button></a
+        >shop all</a
       >
     </div>
   </section>
@@ -2595,9 +2615,10 @@
 
           <a
             href="https://www.petco.com/shop/en/petcostore/brand/the  honest  kitchen"
+            class="citrusHonest__btn_alternative"
             manual_cm_sp="sponsoredbrandpage:thehonestkitchen:youdontneedtobeahumantoeatlikeone:1:youdontneedtobeahumantoeatlikeone:shopnow"
             onclick="clickTrackLink(this); "
-            ><button>shop now</button></a
+            >shop now</a
           >
         </div>
       </div>
@@ -2625,9 +2646,10 @@
 
           <a
             href="https://www.petco.com/shop/en/petcostore/brand/the  honest  kitchen"
+            class="citrusHonest__btn_alternative"
             manual_cm_sp="sponsoredbrandpage:thehonestkitchen:thefirsthumangradepetfoodbrand:1:thefirsthumangradepetfoodbrand:shopall"
             onclick="clickTrackLink(this); "
-            ><button>shop all</button></a
+            >shop all</a
           >
         </div>
         <div class="citrusHonest_Lifestyle_img">
@@ -2648,6 +2670,7 @@
 </main>
 <!-- End landing page wrapper -->
 
+<!-- js dependency -->
 <!-- Start Modal Js -->
 <script type="text/javascript">
   let citrusYtVideos = document.querySelectorAll(".citrusHonest_seeDetails");
@@ -2667,16 +2690,8 @@
 </script>
 <!-- End Modal Js -->
 
-<!-- js dependency -->
-<!-- Start Splide js library-->
+<!-- Start Splide Js library-->
 <script>
-  /*!
-   * Splide.js
-   * Version  : 4.1.2
-   * License  : MIT
-   * Copyright: 2022 Naotoshi Fujita
-   */
-
   function r(n, t) {
     for (var i = 0; i < t.length; i++) {
       var r = t[i];
@@ -2691,7 +2706,12 @@
       i && r(n, i),
       Object.defineProperty(n, "prototype", { writable: !1 });
   }
-
+  /*!
+   * Splide.js
+   * Version  : 4.1.2
+   * License  : MIT
+   * Copyright: 2022 Naotoshi Fujita
+   */
   var n, t;
   (n = this),
     (t = function () {
@@ -4922,19 +4942,19 @@
           t());
   //# sourceMappingURL=splide.min.js.map
 </script>
-<!-- End Splide js library-->
+<!-- End Splide Js -->
 
-<!-- Start custom javascript -->
+<!-- Start Custom javascript -->
 <script>
   {
     /*-------------------------*
-                 custom coded hero slider
-                 *---------------------------*/
+           custom coded hero slider 
+           *---------------------------*/
   }
 
   /*----------------------
-        ---- RoW slider js -----
-        ------------------------*/
+  ---- RoW slider js -----
+  ------------------------*/
   let citrusHonest_carousel = document.querySelector(".citrusHonest_carousel");
 
   let citrusHonest_carouselInner = document.querySelector(
@@ -5129,12 +5149,12 @@
   });
 
   /*-----------------------
-        --- End Row js Slider ----
-        ------------------------*/
+  --- End Row js Slider ----
+  ------------------------*/
 
   /**----------------------
-               * product scroller js ---
-               --------------------------*/
+         * product scroller js ---
+         --------------------------*/
   // tab carousal js
   // initialize product scroller
   advanceArrows("citrusHonest-Dog-Product");
@@ -5166,10 +5186,10 @@
           perPage: 3,
         },
         1024: {
-          perPage: 6,
+          perPage: 4,
         },
         1200: {
-          perPage: 6,
+          perPage: 5,
         },
         1440: {
           perPage: 6,

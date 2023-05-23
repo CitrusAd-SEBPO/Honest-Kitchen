@@ -238,10 +238,10 @@ function advanceArrows(idx) {
         perPage: 3,
       },
       1024: {
-        perPage: 6,
+        perPage: 4,
       },
       1200: {
-        perPage: 6,
+        perPage: 5,
       },
       1440: {
         perPage: 6,
